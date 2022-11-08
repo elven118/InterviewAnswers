@@ -1,0 +1,34 @@
+query {
+  pageTemplateCollection (skip: 0, limit: 1000, where:{
+    seo: {
+      sys: {
+        id_exists: true
+      }
+    }
+  }) {
+    total
+    skip
+    limit
+    items {
+      contentfulMetadata {
+  			tags {
+          id
+        }
+      }
+      sys {
+        id
+      	publishedAt
+        firstPublishedAt
+        publishedVersion
+      }
+    	url
+      isShowVaButton
+      seo {
+				description
+        title
+        isNoIndex
+      }
+      onsiteSearchIndexing
+    }
+  }
+}
