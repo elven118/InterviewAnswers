@@ -1,4 +1,4 @@
-class Test1 {
+class Test1Update {
     private static void printTriangle(int n) {
         for (int i = 1; i <= n; i++) {
             System.out.print(" ".repeat(n-i));
